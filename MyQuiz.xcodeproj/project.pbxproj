@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D26FAA021A0906400C542A9 /* question.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2D26FA9F21A0906400C542A9 /* question.csv */; };
+		2D26FAA221A0909700C542A9 /* QuestionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26FAA121A0909700C542A9 /* QuestionDataManager.swift */; };
 		2D4668FD219F8F6500293970 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4668FC219F8F6500293970 /* AppDelegate.swift */; };
 		2D4668FF219F8F6500293970 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4668FE219F8F6500293970 /* ViewController.swift */; };
 		2D466902219F8F6500293970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D466900219F8F6500293970 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D26FA9F21A0906400C542A9 /* question.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = question.csv; sourceTree = "<group>"; };
+		2D26FAA121A0909700C542A9 /* QuestionDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataManager.swift; sourceTree = "<group>"; };
 		2D4668F9219F8F6500293970 /* MyQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D4668FC219F8F6500293970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D4668FE219F8F6500293970 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				2D466903219F8F6700293970 /* Assets.xcassets */,
 				2D466905219F8F6700293970 /* LaunchScreen.storyboard */,
 				2D466908219F8F6700293970 /* Info.plist */,
+				2D26FA9F21A0906400C542A9 /* question.csv */,
+				2D26FAA121A0909700C542A9 /* QuestionDataManager.swift */,
 			);
 			path = MyQuiz;
 			sourceTree = "<group>";
@@ -124,6 +130,7 @@
 			files = (
 				2D466907219F8F6700293970 /* LaunchScreen.storyboard in Resources */,
 				2D466904219F8F6700293970 /* Assets.xcassets in Resources */,
+				2D26FAA021A0906400C542A9 /* question.csv in Resources */,
 				2D466902219F8F6500293970 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +144,7 @@
 			files = (
 				2D4668FF219F8F6500293970 /* ViewController.swift in Sources */,
 				2D4668FD219F8F6500293970 /* AppDelegate.swift in Sources */,
+				2D26FAA221A0909700C542A9 /* QuestionDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
