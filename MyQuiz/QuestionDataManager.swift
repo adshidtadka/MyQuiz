@@ -75,7 +75,3 @@ class QuestionDataManager {
         return nil
     }
 }
-    
-    
-
-}

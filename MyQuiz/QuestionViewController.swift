@@ -12,7 +12,6 @@ import AudioToolbox
 class QuestionViewController: UIViewController {
     
     var questionData: QuestionData!
-    
     @IBOutlet weak var questionNoLabel: UILabel!
     @IBOutlet weak var questionTextView: UITextView!
     @IBOutlet weak var answer1Button: UIButton!
@@ -31,6 +30,10 @@ class QuestionViewController: UIViewController {
         answer2Button.setTitle(questionData.answer2, for: UIControl.State.normal)
         answer3Button.setTitle(questionData.answer3, for: UIControl.State.normal)
         answer4Button.setTitle(questionData.answer4, for: UIControl.State.normal)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
     @IBAction func tapAnswer1Button(_ sender: Any) {
@@ -88,6 +91,7 @@ class QuestionViewController: UIViewController {
         }
         
         if let nextQuestionViewController = storyboard?.instantiateViewController(withIdentifier: "question") as? QuestionViewController {
+            nextQuestionViewController.questionData = nextQuestion
             present(nextQuestionViewController, animated: true, completion: nil)
         }
     }
