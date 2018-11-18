@@ -53,22 +53,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="ヤフオク!にて過去最高額で落札された商品は何でしょう?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="avl-ua-F7g">
-                                <rect key="frame" x="16" y="66" width="343" height="131"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Q1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMF-K0-dPa">
+                                <rect key="frame" x="16" y="37" width="35" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="HkC-JF-udk">
-                                <rect key="frame" x="86.5" y="232.5" width="202" height="202"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="gSI-pW-Tpn">
-                                <rect key="frame" x="87" y="233" width="201" height="201"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cfL-wb-OIu">
                                 <rect key="frame" x="126" y="205" width="123" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -119,15 +110,27 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Q1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMF-K0-dPa">
-                                <rect key="frame" x="16" y="37" width="35" height="21"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="HkC-JF-udk">
+                                <rect key="frame" x="86.5" y="232.5" width="202" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="ヤフオク!にて過去最高額で落札された商品は何でしょう?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="avl-ua-F7g">
+                                <rect key="frame" x="16" y="66" width="343" height="131"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="t4j-VY-QZC">
+                                <rect key="frame" x="87" y="233" width="201" height="201"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="t4j-VY-QZC" firstAttribute="centerY" secondItem="XbD-FQ-39t" secondAttribute="centerY" id="CaG-BQ-eV3"/>
+                            <constraint firstItem="t4j-VY-QZC" firstAttribute="centerX" secondItem="XbD-FQ-39t" secondAttribute="centerX" id="qhG-h7-sEi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gJE-bn-hjB"/>
                     </view>
                     <connections>
@@ -135,8 +138,8 @@
                         <outlet property="answer2Button" destination="iZc-xc-qO8" id="AoH-sO-dji"/>
                         <outlet property="answer3Button" destination="JjQ-cI-qa8" id="ebV-hh-OKE"/>
                         <outlet property="answer4Button" destination="cu0-To-6z4" id="fgw-1D-bbI"/>
-                        <outlet property="correctImageView" destination="gSI-pW-Tpn" id="hfj-HS-MxH"/>
-                        <outlet property="incorrectImageView" destination="gSI-pW-Tpn" id="zSf-Yl-8AW"/>
+                        <outlet property="correctImageView" destination="HkC-JF-udk" id="5uQ-9S-XHm"/>
+                        <outlet property="incorrectImageView" destination="t4j-VY-QZC" id="BGu-mm-i0o"/>
                         <outlet property="questionNoLabel" destination="nMF-K0-dPa" id="exd-9h-4f2"/>
                         <outlet property="questionTextView" destination="avl-ua-F7g" id="Rqf-Cg-gdn"/>
                     </connections>
