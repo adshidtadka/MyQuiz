@@ -14,8 +14,8 @@ class QuestionData {
     var answer2: String
     var answer3: String
     var answer4: String
-    var collectAnswerNumber: Int
-    var userChoiceAnswerNumer: Int?
+    var correctAnswerNumber: Int
+    var userChoiceAnswerNumber: Int?
     var questionNo: Int = 0
     
     init(questionSourceDataArray: [String]) {
@@ -24,11 +24,11 @@ class QuestionData {
         answer2 = questionSourceDataArray[2]
         answer3 = questionSourceDataArray[3]
         answer4 = questionSourceDataArray[4]
-        collectAnswerNumber = Int(questionSourceDataArray[5])!
+        correctAnswerNumber = Int(questionSourceDataArray[5])!
     }
     
-    func isCollect() -> Bool {
-        if collectAnswerNumber == userChoiceAnswerNumer {
+    func isCorrect() -> Bool {
+        if correctAnswerNumber == userChoiceAnswerNumber {
             return true
         }
         return false

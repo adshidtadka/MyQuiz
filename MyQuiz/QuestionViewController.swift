@@ -37,27 +37,27 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func tapAnswer1Button(_ sender: Any) {
-        questionData.userChoiceAnswerNumer = 1
+        questionData.userChoiceAnswerNumber = 1
         goNextQuestionWithAnimation()
     }
     
     @IBAction func tapAnswer2Button(_ sender: Any) {
-        questionData.userChoiceAnswerNumer = 2
+        questionData.userChoiceAnswerNumber = 2
         goNextQuestionWithAnimation()
     }
     
     @IBAction func tapAnswer3Button(_ sender: Any) {
-        questionData.userChoiceAnswerNumer = 3
+        questionData.userChoiceAnswerNumber = 3
         goNextQuestionWithAnimation()
     }
     
     @IBAction func tapAnswer4Button(_ sender: Any) {
-        questionData.userChoiceAnswerNumer = 4
+        questionData.userChoiceAnswerNumber = 4
         goNextQuestionWithAnimation()
     }
     
     func goNextQuestionWithAnimation() {
-        if questionData.isCollect() {
+        if questionData.isCorrect() {
             goNextQuestionWithCorrectAnimation()
         } else {
             goNextQuestionWithIncorrectAnimation()
@@ -68,8 +68,8 @@ class QuestionViewController: UIViewController {
         AudioServicesPlayAlertSound(1025)
         UIView.animate(withDuration: 2.0, animations: {
             self.correctImageView.alpha = 1.0
-        }) { (Bool) in
-            self.goNextQuestion()
+            }) { (Bool) in
+                self.goNextQuestion()
         }
     }
     
