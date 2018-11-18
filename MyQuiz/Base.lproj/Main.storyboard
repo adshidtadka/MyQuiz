@@ -166,10 +166,10 @@
             </objects>
             <point key="canvasLocation" x="949.60000000000002" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="19i-su-Hca">
             <objects>
-                <viewController id="wGv-hG-L3K" sceneMemberID="viewController">
+                <viewController id="wGv-hG-L3K" customClass="ResultViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wkK-r8-REt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
